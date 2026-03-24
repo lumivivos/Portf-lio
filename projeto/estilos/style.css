@@ -108,14 +108,14 @@ brilhoPontos 8s ease-in-out infinite;
 }
 
 header{
-padding: 10px;
+padding: 7px;
 text-align:center;
 border-bottom:1px solid rgb(0,0,0);
 }
 
 header h1{
 font-size: 1.3em;
-margin-bottom: 7px;
+margin-bottom: 5px;
 }
 
 header,
@@ -123,7 +123,7 @@ footer{
 background:#0e2b47;
 color:#ffffff;
 text-align:center;
-padding: 10px;
+padding: 7px;
 }
 
 #main-nav{
@@ -148,7 +148,7 @@ transform:translateY(-2px);
 }
 
 main{
-padding:20px;
+padding:15px;
 flex:1;
 }
 
@@ -296,4 +296,44 @@ text-align:center;
 padding:15px;
 margin-top:auto;
 border-top:1px solid rgba(255,255,255,0.06);
+}
+
+.skill {
+  margin-bottom: 15px;
+}
+
+.skill span {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.bar {
+  width: 100%;
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+.progress {
+  height: 100%;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #3b82f6, #60a5fa);
+  transition: width 0.5s ease-in-out;
+}
+
+
+.progress.html {
+  background: linear-gradient(90deg, #e44d26, #f16529);
+}
+
+.progress.css {
+  background: linear-gradient(90deg, #264de4, #2965f1);
+}
+
+.progress.js {
+  background: linear-gradient(90deg, #f0db4f, #e5c11b);
 }
