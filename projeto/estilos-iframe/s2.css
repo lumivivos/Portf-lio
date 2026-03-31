@@ -4,49 +4,48 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 
 html, body {
-    overflow: auto;
+    height: 100%;
+    background: radial-gradient(circle at 20% 20%, #0b1d33, #06101e 60%, #040d18 100%);
+    color: #e0e0e0;
 }
 
-
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
+header, footer {
+    background: #0f2545;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
 }
 
 main {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 20px;
-    text-align: center;
+    min-height: calc(100vh - 80px);
 }
-
 
 main > section {
-   width: 300px;      
-   max-width: 90%;   
-   background-color: #fff;
-   padding: 20px;
-   border-radius: 20px;
-   box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.6);
+    width: 300px;
+    max-width: 90%;
+    background: rgba(255,255,255,0.08);
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 14px 35px rgba(0,0,0,0.35);
+    text-align: center;
 }
 
-
 #msg, #foto {
-    text-align: center;
     margin-top: 20px;
 }
 
 p {
-    margin: 10px;
-    padding: 10px;
-    color: rgb(255, 255, 255); 
+    margin: 10px 0;
+    padding: 0 5px;
+    color: #e0e0e0;
 }
 
 img {
@@ -54,12 +53,7 @@ img {
     margin: 10px auto;
     max-width: 100%;
     height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
-footer {
-    background-color: #333;
-    color: #ffffff;
-    padding: 5px;
-    text-align: center;
-    width: 100%;
-}

@@ -1,138 +1,101 @@
 @charset "UTF-8";
 
-/*#F0E69D amarelinho 
-#E0DEA9 amarelinho claro
-#E0DA65 amarelinho escuro */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body, html {
-    width: 100vw;
-    height: 100vh;
-    background-color: #E0DEA9;
-    font-family: system-ui, sans-serif;
-}
-
-
-main {
+body {
+    background: radial-gradient(circle at 20% 20%, #0b1d33, #06101e 60%, #040d18 100%);
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
+    justify-content: center;
+    min-height: 100vh;
+    color: #e0e0e0;
 }
-
 
 section#login {
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 16px;
+    box-shadow: 0 14px 35px rgba(0,0,0,0.35);
     overflow: hidden;
-
-    display: flex;
-    flex-direction: column; 
     width: 320px;
-    height: 640px;
-    transition: width .2s, height .2s;
-    transition-timing-function: ease;
 }
-
-
-#imagem {
-    background: #E0DEA9 url(../imagens/pexels-shvetsa-3683056.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 185px;
-    width: 100%;
-}
-
 
 #formulario {
-    padding: 20px;
+    padding: 25px;
+}
+
+#formulario h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+#formulario p {
+    font-size: 0.9em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #c0c0c0;
+}
+
+.campo {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
+    align-items: center;
+    margin-bottom: 15px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 12px;
+    padding: 8px 12px;
 }
 
-div#formulario > h1 {
-    text-align: center;
-    font-size: 2em;
+.campo span {
+    color: #60a5fa;
+    margin-right: 8px;
 }
 
-div#formulario > p {
-    text-align: justify;
-    font-size: 1em;
-}
-
-form > div.campo {
-    background-color: #f5ef7f;
-    border: 2px solid rgba(0, 0, 0, 0.575);
-    display: block;
-    width: 100%;
-    height: 35px;
-    border-radius: 8px;
-    margin: 5px 0px;
-
-}
-
-span#igrupo {
-    color: rgb(59, 58, 58);
-    padding: 5px;
-}
-
-
-span#ilock {
-    color: rgb(59, 58, 58);
-
-    padding: 5px;
-}
-
-div.campo > input {
-    background-color: #E0DEA9;
-    font-size: 1em;
-    width: calc(100% - 50px);
-    height: 100%;
-    border: 0px;
-    border-radius: 8px;
-    padding: 5px;
-    transform: translateY(-8px);
-}
-
-form > input[type=submit] {
-    display: block;
-    font-size: 1em;
-    width: 95%;
-    height: 28px;
-    background-color: #E0DA65;
-    color: rgb(37, 35, 35);
+.campo input {
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 10px;
+    background: transparent;
+    width: 100%;
+    padding: 8px;
+    outline: none;
+    color: #ffffff;
+}
 
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #60a5fa, #3b82f6);
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s ease;
 }
-form > input[type=submit]:hover {
-    background-color: #E0DEA9;
+
+input[type="submit"]:hover {
+    background: linear-gradient(90deg, #3b82f6, #2563eb);
+    box-shadow: 0 6px 18px rgba(96,165,250,0.6);
+    transform: translateY(-2px);
 }
-form > a.botao {
+
+
+.botao {
     display: block;
     text-align: center;
-    font-size: 1em;
-    color: black;
-    width: 100%;
-    height: 32px;
-    background-color: #E0DEA9;
-    padding-top: 5px;
-    margin-top: 5px;
-    border-radius: 5px;
+    margin-top: 12px;
+    font-size: 0.9em;
+    color: #60a5fa;
     text-decoration: none;
+    transition: all 0.2s ease;
 }
 
-form > a.botao:hover {
-    background-color: rgb(70, 69, 69);
+.botao:hover {
+    color: #3b82f6;
+    text-shadow: 0 0 6px rgba(96,165,250,0.8);
 }
