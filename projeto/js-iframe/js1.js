@@ -1,6 +1,6 @@
 function atualizarHora() {
-    const msg = document.querySelector('#msg p');
-    const img = document.querySelector('#foto img');
+    const msg = document.querySelector('div#msg');
+    const img = document.querySelector('div#foto');
     const data = new Date();
 
     const hora = data.getHours();
