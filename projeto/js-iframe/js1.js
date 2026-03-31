@@ -1,29 +1,24 @@
 function atualizarHora() {
-    const msg = document.querySelector('#msg');
-    const img = document.querySelector('#foto');
+    const msg = document.querySelector('#msg p');
+    const img = document.querySelector('#foto img');
     const data = new Date();
 
     const hora = data.getHours();
     const min = data.getMinutes().toString().padStart(2, '0');
     const seg = data.getSeconds().toString().padStart(2, '0'); 
 
-    msg.innerHTML = `Agora são ${hora}:${min}:${seg} horas.`;
-
+    msg.textContent = `Agora são ${hora}:${min}:${seg} horas.`;
 
     if (hora >= 0 && hora < 12) {
-        img.src = 'imagens/manhafotosite.jpg';
+        img.src = '../imagens-iframe/manhafotosite.jpg';
 
     } else if (hora >= 12 && hora < 18) {
-        img.src = 'imagens/tardefotosite.jpg';
+        img.src = '../imagens-iframe/tardefotosite.jpg';
 
     } else {
-        img.src = 'imagens/noitefotosite.jpg';
-
+        img.src = '../imagens-iframe/noitefotosite.jpg';
     }
 }
 
-
 setInterval(atualizarHora, 1000);
-
-
 atualizarHora();
