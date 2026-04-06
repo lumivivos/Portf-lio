@@ -81,6 +81,11 @@
 
 
 @media (max-width: 767px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        font-size: 0.9em;
+    }
     header, .header-link,
     section, .projeto-card {
         transform: none !important;
@@ -96,6 +101,7 @@
 
     section h2 {
         font-size: 1.6em;
+        text-align: center;
     }
 
     .projeto-card h3 {
@@ -110,15 +116,18 @@
         font-size: 0.95em;
         width: 100%;
         max-width: 400px;
-        margin: 0;
+        margin: 10;
     }
        .grid-projetos {
         grid-template-columns: 1fr; 
         gap: 15px;
+        display: flex;
+        flex-direction: column;
     }
       .projeto-card iframe {
         height: 300px;
-        width: 250px;
+        width: 100%;
+
     }
 
 
