@@ -121,7 +121,7 @@ header {
     cursor: pointer;
     position: fixed;
     width: 96%;
-    z-index: 1
+    z-index: 0
 }
 
 header:hover {
@@ -354,4 +354,20 @@ a:hover{
 footer{
     margin-top:auto;
     border-top:1px solid rgba(255,255,255,0.12);
+    height: 125px;
+}
+
+.socials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 10px 0;
+    padding: 10px;
+    list-style: none;
+}
+
+.footer .socials li a:hover {
+  color: #00acee; 
+  transform: translateY(-5px) scale(1.2); 
 }
