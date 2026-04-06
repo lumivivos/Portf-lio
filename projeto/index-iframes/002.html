@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio</title>
+    <title>Horas Interativas</title>
     <link rel="stylesheet" href="../estilos-iframe/s2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
 </head>
 <body>
@@ -15,7 +16,7 @@
         <section>
             <article>
                     <div id="msg">
-                            <p>Testando...</p>
+                            <p>Olá!</p>
                     </div>
                      
                     <div id="foto">
@@ -25,7 +26,46 @@
         </section>
     </main>
 
+  <footer id="Contato">
+<p>Fique à vontade para me contatar através das redes abaixo ou pelo email!</p>
+    <ul class="socials">
+      <li><a href="mailto:suenagalucasmiguel@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
+      <li><a href="https://github.com/lumivivos" target="_blank"><i class="fa-brands fa-github"></i></a></li>
 
-    <script src="../js-iframe/js1.js"></script>
+    </ul>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Lucas Miguel Suenaga. Todos os direitos reservados.</p>
+  </div>
+  
+    </footer>
+
+
+    <script>
+        function atualizarHora() {
+    const msg = document.querySelector('div#msg');
+    const img = document.querySelector('div#foto');
+    const data = new Date();
+
+    const hora = data.getHours();
+    const min = data.getMinutes().toString().padStart(2, '0');
+    const seg = data.getSeconds().toString().padStart(2, '0'); 
+
+    msg.textContent = `Agora são ${hora}:${min}:${seg} horas.`;
+
+    if (hora >= 0 && hora < 12) {
+        img.src = '../imagens-iframe/manhafotosite.jpg';
+
+    } else if (hora >= 12 && hora < 18) {
+        img.src = '../imagens-iframe/tardefotosite.jpg';
+
+    } else {
+        img.src = '../imagens-iframe/noitefotosite.jpg';
+    }
+}
+
+setInterval(atualizarHora, 1000);
+atualizarHora();
+    </script>
 </body>
 </html>

@@ -29,6 +29,21 @@
         height: auto;
         margin: 20px auto;
         padding: 20px;
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 50px;
+        z-index: 1;
+    }
+    header, .header-link,
+    section, .projeto-card {
+        transform: translateY(0) !important;
+        box-shadow: 0 14px 35px rgba(0,0,0,0.35) !important;
+    }
+}
+
     }
 
     #imagem {
@@ -56,4 +71,8 @@
         padding: 8px;
         font-size: 0.95em;
     }
-}
+
+    footer {
+        padding: 20px 15px;
+        height: auto;
+    }

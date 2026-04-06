@@ -190,6 +190,7 @@ section>h2{
     margin-bottom:22px;
     color:#ffffff;
     position:relative;
+    text-align: center;
 }
 
 section>h2::after{
@@ -369,5 +370,11 @@ footer{
 
 .footer .socials li a:hover {
   color: #00acee; 
-  transform: translateY(-5px) scale(1.2); 
+  transform: translateY(-5px) scale(1.1); 
+}
+
+.socials li a:hover {
+    color: #3b82f6;
+    transform: translateY(-5px) scale(1.2);
+    text-shadow: 0 0 8px rgba(96,165,250,0.6);
 }
