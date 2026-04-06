@@ -172,8 +172,9 @@ section{
     backdrop-filter:blur(12px);
     padding:30px;
     border-radius:20px;
-    max-width:650px;
-    margin:60px auto;
+    width: 90%;
+    max-width:900px;
+    margin: 40px auto;
     box-shadow:0 14px 35px rgba(0,0,0,0.35);
     transition:all 0.3s ease;
 }
@@ -196,7 +197,7 @@ section>h2::after{
     width:70px;
     height:3px;
     background:#60a5fa;
-    margin-top:8px;
+    margin: 8px auto 0 auto;
     border-radius:2px;
 }
 
@@ -205,6 +206,13 @@ section p{
     line-height:1.6;
     color:#000000;
 }
+
+section p, .projeto-card p {
+    word-spacing: normal; 
+    letter-spacing: normal;
+    line-height: 1.6;
+}
+
 
 a{
     color:#60a5fa;
@@ -227,6 +235,7 @@ a:hover{
     animation: aparecer 0.5s ease forwards;
     cursor: pointer;
     
+    
 }
 
 .projeto-card h3 {
@@ -237,10 +246,11 @@ a:hover{
 }
 
 .projeto-card p {
+    line-height: 1.7;
     margin-top: 12px;
     font-size: 1.15em;
     color: #e0e0e0;
-    text-align: justify;
+    text-align: left;
     transition: color 0.3s ease, text-shadow 0.3s ease;
     
 }
@@ -256,10 +266,25 @@ a:hover{
     text-align: center;
 }
 
+
+.projeto-card iframe {
+    width: 100%;
+    height: 400px; 
+    border-radius: 12px;
+    border: none;
+}
+
+
+
 .projeto-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 22px 55px rgba(96,165,250,0.5), 0 18px 40px rgba(139,92,246,0.4);
+    box-shadow: 0 22px 55px rgba(96, 165, 250, 0.5), 0 18px 40px rgba(139, 92, 246, 0.4);;
 }
+
+    section:hover, .projeto-card:hover {
+        transform: translateY(-6px) scale(1.03);
+        box-shadow: 0 25px 60px rgba(87, 152, 233, 0.55), 0 20px 45px rgba(85, 23, 228, 0.45);
+    }
 
 .projeto-card:hover h3 {
     color: #60a5fa;
@@ -275,6 +300,8 @@ a:hover{
     color: #8b5cf6;
     text-shadow: 0 0 8px rgba(139,92,246,0.8);
 }
+
+
 
 .skill{
     margin-bottom:18px;
@@ -313,6 +340,15 @@ a:hover{
 .progress.js{
     background:linear-gradient(90deg,#f0db4f,#e5c11b);
 }
+
+.grid-projetos {
+      display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    gap: 25px;
+    width: 100%;
+    justify-items: center;
+}
+
 
 footer{
     margin-top:auto;
