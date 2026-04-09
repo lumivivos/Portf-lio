@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio</title>
+    <title>Portfólio - dev_lumi</title>
 
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
@@ -14,106 +14,151 @@
 <body>
     <div class="particulas" aria-hidden="true"></div>
 
+
     <header>
         <h1>dev_lumi</h1>
         <nav>
-            <a href="#sobre" class="header-link">Sobre Mim</a>
-            <a href="#projetos" class="header-link">Projetos</a>
-            <a href="#Contato" class="header-link">Contato</a>
+            <a href="#sobre" class="nav-link">Sobre Mim</a>
+            <a href="#projetos" class="nav-link">Projetos</a>
+            <a href="#contato" class="nav-link">Contato</a>
+            <a href="#gostos" class="nav-link">Gostos</a>
         </nav>
     </header>
 
     <main>
 
         <section id="sobre">
-          <h2>Sobre Mim</h2>
-            <article class="projeto-card">
+            <h2>Sobre Mim</h2>
+            <article class="sobre-card">
+                <h3>Descrição</h3>
+                <p>Me chamo Lucas Miguel, tenho 16 anos e sempre fui curioso sobre tecnologia e como as coisas funcionam. Cada nova descoberta despertava ainda mais meu interesse por aprender e explorar esse mundo.</p>
+                <p>Programar se tornou algo especial para mim. A sensação de ver um código funcionando, depois de enfrentar erros e desafios até encontrar a solução, é o que mais me motiva a continuar evoluindo.</p>
+                <p>Atualmente, sou um desenvolvedor iniciante apaixonado por tecnologia e criação de projetos interativos. Estou focado em desenvolvimento web e busco constantemente aprender novas ferramentas e aprimorar minhas habilidades.</p>
 
-                  <h3>Descrição</h3>
-                    <p>Me chamo Lucas Miguel, tenho 16 anos e sempre fui curioso sobre tecnologia e sobre como as coisas funcionam. Cada nova descoberta despertava ainda mais meu interesse por aprender e explorar esse mundo.</p>
-                    <p>Programar se tornou algo especial para mim. A sensação de ver um código funcionando, depois de enfrentar erros e desafios até encontrar a solução, é o que mais me motiva a continuar evoluindo.</p>
-                    <p>Atualmente, sou um desenvolvedor iniciante apaixonado por tecnologia e criação de projetos interativos. Estou focado em desenvolvimento web e busco constantemente aprender novas ferramentas e aprimorar minhas habilidades.</p>
-                  <div class="skill">
-                      <span>HTML5</span>
-                      <div class="bar">
-                          <div class="progress html" style="width: 90%;"></div>
-                      </div>
-                  </div>
-                  <div class="skill">
-                      <span>CSS3</span>
-                      <div class="bar">
-                          <div class="progress css" style="width: 80%;"></div>
-                      </div>
-                  </div>
-                  <div class="skill">
-                      <span>JavaScript</span>
-                      <div class="bar">
-                          <div class="progress js" style="width: 60%;"></div>
-                      </div>
-                  </div>
+                <div class="skills">
+                    <div class="skill">
+                        <span>HTML5</span>
+                        <div class="bar">
+                            <div class="progress html" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>CSS3</span>
+                        <div class="bar">
+                            <div class="progress css" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="bar">
+                            <div class="progress js" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
             </article>
-
         </section>
-
 
         <section id="projetos">
-                <h2>Projetos</h2>
-            <div class="grid-projetos">
-    
-                <article class="projeto-card" id="projeto1">
-    
-    
-    
-                        <div>
-                          <h3>Projeto de Login</h3>
-                          <a href="https://lumivivos.github.io/Projetos-Pequenos/" target="projeto-login">001</a>
-                          <iframe name="projeto-login" width="auto" height="700" sandbox="allow-scripts"></iframe>
-                          <p><a href="https://lumivivos.github.io/Projetos-Pequenos/" target="_blank">Sistema de Login só em CSS e HTML</a></p>
-                        </div>
-    
-                </article>
-    
-                <article class="projeto-card" id="projeto2">
-                        <div>
-                          <h3>Relógio</h3>
-                          <a href="https://lumivivos.github.io/Projetos-Pequenos/index/002.html" target="projeto-calculadora">002</a>
-                          <iframe name="projeto-calculadora" width="auto" height="700" sandbox="allow-scripts"></iframe>
-                          <p><a href="https://lumivivos.github.io/Projetos-Pequenos/index/002.html" target="_blank">Horas Exatas em JavaScript</a></p>
-                        </div>
-                </article>
-    
-                <article class="projeto-card" id="projeto3">
-    
-                        <div>
-                          <h3>Calculadora</h3>
-                          <a href="https://lumivivos.github.io/Projetos-Pequenos/index/003.html" target="projeto-horas">003</a>
-                          <iframe name="projeto-horas" width="auto" height="700" sandbox="allow-scripts"></iframe>
-                          <p><a href="https://lumivivos.github.io/Projetos-Pequenos/index/003.html" target="_blank">Calculadora em JavaScript</a></p>
-    
-                        </div>
-    
- 
-    
-                </article>
-            </div>
+            <h2>Projetos</h2>
+            <div class="projetos-grid">
 
+                <article class="projeto-card">
+                    <h3>Projeto de Login</h3>
+                    <a href="https://lumivivos.github.io/Projetos-Pequenos/" target="iframe-login">001</a>
+                    <iframe name="iframe-login" width="100%" height="700" sandbox="allow-scripts"></iframe>
+                    <p><a href="https://lumivivos.github.io/Projetos-Pequenos/" target="_blank">Sistema de Login só em CSS e HTML</a></p>
+                </article>
+
+                <article class="projeto-card">
+                    <h3>Relógio</h3>
+                    <a href="https://lumivivos.github.io/Projetos-Pequenos/index/002.html" target="iframe-relogio">002</a>
+                    <iframe name="iframe-relogio" width="100%" height="700" sandbox="allow-scripts"></iframe>
+                    <p><a href="https://lumivivos.github.io/Projetos-Pequenos/index/002.html" target="_blank">Horas Exatas em JavaScript</a></p>
+                </article>
+
+                <article class="projeto-card">
+                    <h3>Calculadora</h3>
+                    <a href="https://lumivivos.github.io/Projetos-Pequenos/index/003.html" target="iframe-calculadora">003</a>
+                    <iframe name="iframe-calculadora" width="100%" height="700" sandbox="allow-scripts"></iframe>
+                    <p><a href="https://lumivivos.github.io/Projetos-Pequenos/index/003.html" target="_blank">Calculadora em JavaScript</a></p>
+                </article>
+
+            </div>
         </section>
 
+    <section id="gostos">
+  <h2>Meus Gostos</h2>
+  <div class="grid-gostos">
+
+
+    <article class="gosto-card">
+      <i class="fa-solid fa-gamepad"></i>
+      <h3>Jogos</h3>
+      <p>Gosto de jogar em meu tempo livre.</p>
+      <a href="#modal-jogos" class="btn-mais">Saiba mais</a>
+    </article>
+
+
+    <article class="gosto-card">
+      <i class="fa-solid fa-dog"></i>
+      <h3>Pets</h3>
+      <p>Meu coelho.</p>
+      <a href="#modal-animais" class="btn-mais">Saiba mais</a>
+    </article>
+
+
+    <article class="gosto-card">
+      <i class="fa-solid fa-music"></i>
+      <h3>Músicas</h3>
+      <p>Gosto bastante de música clássica e rock progressivo.</p>
+      <a href="#modal-musica" class="btn-mais">Saiba mais</a>
+    </article>
+
+
+  
+  <div id="modal-jogos" class="modal">
+    <div class="modal-content">
+      <a href="#gostos" class="close">&times;</a>
+      <h2>Jogos que eu gosto</h2>
+      <p> Skyrim, a franquia de Resident Evil e Kenshi são os jogos que mais costumo jogar ultimamente. Gosto de jogos com mundos abertos, histórias envolventes e mecânicas desafiadoras.
+         </p>
+
+    </div>
+  </div>
+
+
+  <div id="modal-animais" class="modal">
+    <div class="modal-content">
+      <a href="#gostos" class="close">&times;</a>
+      <h2>Branquinho</h2>
+      <p>Amo o branquinho, meu coelho de estimação. Ele é simplesmente uma nuvem e adorável. Gosto de passar tempo com ele, seja dando carinho ou apenas observando suas travessuras. Ele é uma companhia incrível e sempre me faz sorrir.
+   </p>
+    </div>
+  </div>
+
+
+  <div id="modal-musica" class="modal">
+    <div class="modal-content">
+      <a href="#gostos" class="close">&times;</a>
+      <h2>Músicas e Autores</h2>
+      <p>Beethoven e Frédéric Chopin são meus artistas favoritos em música clássica. Em bandas, eu gosto da EPICA e King Crimson</p>
+
+    </div>
+  </div>
+
+</section>
     </main>
 
-    <footer id="Contato">
-<p>Fique à vontade para me contatar através das redes abaixo ou pelo email!</p>
-    <ul class="socials">
-      <li><a href="mailto:suenagalucasmiguel@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
-      <li><a href="https://github.com/lumivivos" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+    <footer id="contato">
+        <p>Fique à vontade para me contatar através das redes abaixo ou pelo email!</p>
+        <ul class="socials">
+            <li><a href="mailto:suenagalucasmiguel@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
+            <li><a href="https://github.com/lumivivos" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+        </ul>
 
-    </ul>
-  </div>
-  <div class="footer-bottom">
-    <p>© 2026 Lucas Miguel Suenaga. Todos os direitos reservados.</p>
-  </div>
-  
+        <div class="footer-bottom">
+            <p>© 2026 Lucas Miguel Suenaga. Todos os direitos reservados.</p>
+        </div>
     </footer>
-
 </body>
 </html>
