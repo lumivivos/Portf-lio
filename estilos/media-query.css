@@ -149,4 +149,28 @@
     .projeto-preview-conteudo p {
         font-size: 0.93rem;
     }
+
+    .jogos-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .jogo-card {
+        min-height: auto;
+        padding: 14px;
+    }
+
+    .jogo-logo {
+        width: 70px;
+        height: 70px;
+    }
+
+    .jogo-card h3 {
+        font-size: 1rem;
+    }
+
+    .jogo-card p {
+        font-size: 0.85rem;
+        display: none;
+    }
 }
