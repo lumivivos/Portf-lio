@@ -1,47 +1,119 @@
-
 @media (min-width: 1120px) {
-    header:hover {transform: translateY(-3px) scale(1.02); box-shadow: 0 12px 35px rgba(114,165,228,0.6),0 8px 25px rgba(139,92,246,0.45);}
-    section:hover, .projeto-card:hover {transform: translateY(-6px) scale(1.03);}
-}
+    header:hover {
+        transform: translateY(-3px) scale(1.02);
+        box-shadow: 0 12px 35px rgba(114,165,228,0.6), 0 8px 25px rgba(139,92,246,0.45);
+    }
 
+    section:hover,
+    .projeto-card:hover {
+        transform: translateY(-6px) scale(1.03);
+    }
+}
 
 @media (min-width: 768px) and (max-width: 1120px) {
-    section {padding: 40px 50px; max-width: 700px;}
-    .projeto-card {max-width: 600px;}
-     .projeto-card iframe {
-        aspect-ratio: 16 / 9;
-        width: 100%;
+    section {
+        max-width: 700px;
+        padding: 40px 50px;
     }
-     .projetos-grid {grid-template-columns: 1fr 1fr; gap: 30px;}
+
+    .projeto-card {
+        max-width: 600px;
+    }
+
+    .projeto-card iframe {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+    }
+
+    .projetos-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
 }
 
-
 @media (max-width: 767px) {
-    header {flex-direction: column; gap: 15px; font-size: 0.9em;}
-    section, .projeto-card {
-        width: 95%;     
-        max-width: 500px; 
-        margin: 10px auto;
-        transform:none !important;
-        box-shadow:0 8px 20px rgba(0,0,0,0.2) !important;
-        padding: 20px;   
+    html {
+        scroll-padding-top: 170px;
     }
 
-    section h2 {font-size: 1.6em;}
-    .projeto-card h3 {font-size: 1.2em;}
-    .projeto-card p {font-size: 0.95em;}
-    .projeto-card a {font-size: 0.95em; max-width: 100%; margin: 10px auto;}
+    header {
+        flex-direction: column;
+        gap: 15px;
+        font-size: 0.9em;
+    }
+
+    main {
+        padding-top: 150px;
+    }
+
+    section {
+        width: 95%;
+        max-width: 500px;
+        margin: 10px auto;
+        padding: 20px;
+        scroll-margin-top: 170px;
+        transform: none !important;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2) !important;
+    }
+
+    .projeto-card {
+        width: 95%;
+        max-width: 500px;
+        margin: 10px auto;
+        padding: 20px;
+        transform: none !important;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2) !important;
+    }
+
+    section h2 {
+        font-size: 1.6em;
+    }
+
+    .projeto-card h3 {
+        font-size: 1.2em;
+    }
+
+    .projeto-card p {
+        font-size: 0.95em;
+    }
+
+    .projeto-card a {
+        max-width: 100%;
+        margin: 10px auto;
+        font-size: 0.95em;
+    }
+
     .projetos-grid {
-        grid-template-columns: 1fr;
         display: flex;
         flex-direction: column;
+        grid-template-columns: 1fr;
         gap: 20px;
     }
-
 
     .projeto-card iframe {
         width: 100%;
         aspect-ratio: 16 / 9;
         border-radius: 12px;
+    }
+
+    .projeto-preview {
+        height: 240px;
+    }
+
+    .projeto-preview iframe {
+        width: 145%;
+        height: 395px;
+        transform: scale(0.69);
+        transform-origin: top left;
+    }
+
+    #modal-projeto-login .projeto-preview iframe {
+        width: 155%;
+        height: 450px;
+        transform: scale(0.62);
+    }
+
+    #modal-projeto-login .projeto-preview::before {
+        width: 24px;
     }
 }
