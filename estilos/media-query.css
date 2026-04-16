@@ -59,10 +59,17 @@
     .projeto-card {
         width: 95%;
         max-width: 500px;
+        min-height: auto;
         margin: 10px auto;
         padding: 20px;
         transform: none !important;
         box-shadow: 0 8px 20px rgba(0,0,0,0.2) !important;
+    }
+
+    .sobre-card,
+    .gosto-card,
+    .skill-card {
+        min-height: auto;
     }
 
     section h2 {
@@ -100,6 +107,11 @@
         height: 240px;
     }
 
+    .projeto-preview-topo {
+        height: 36px;
+        padding: 0 12px;
+    }
+
     .projeto-preview iframe {
         width: 145%;
         height: 395px;
@@ -114,6 +126,8 @@
     }
 
     #modal-projeto-login .projeto-preview::before {
+        top: 36px;
         width: 24px;
+        height: calc(100% - 36px);
     }
 }

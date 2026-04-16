@@ -34,7 +34,7 @@ main {
 section {
     width: 90%;
     max-width: 900px;
-    margin: 40px auto;
+    margin: 32px auto;
     padding: 60px 70px;
     border: 1px solid rgba(255,255,255,0.15);
     border-radius: 20px;
@@ -47,7 +47,7 @@ section {
 
 section h2 {
     position: relative;
-    margin-bottom: 22px;
+    margin-bottom: 26px;
     font-size: 2em;
     color: #fff;
     text-align: center;
@@ -127,9 +127,18 @@ header {
     transform: translateY(-2px) scale(1.05);
 }
 
+a:focus-visible,
+button:focus-visible,
+.close:focus-visible {
+    outline: 2px solid #60a5fa;
+    outline-offset: 4px;
+    border-radius: 10px;
+}
+
 .sobre-card,
 .projeto-card {
-    padding: 22px;
+    width: 100%;
+    padding: 26px;
     border-radius: 18px;
     background: rgba(255,255,255,0.08);
     box-shadow: 0 14px 35px rgba(0,0,0,0.25);
@@ -139,18 +148,24 @@ header {
 
 .sobre-card h3,
 .projeto-card h3 {
-    margin-bottom: 12px;
+    margin-bottom: 14px;
     color: #fff;
     text-align: center;
+    font-size: 1.35rem;
     transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 .sobre-card p,
 .projeto-card p {
-    margin-top: 12px;
-    font-size: 1.15em;
-    line-height: 1.7;
+    margin-top: 10px;
+    font-size: 1.05rem;
+    line-height: 1.75;
     color: #e0e0e0;
+}
+
+.sobre-card {
+    max-width: 760px;
+    margin: 0 auto;
 }
 
 .sobre-card a,
@@ -162,6 +177,14 @@ header {
     text-align: center;
     text-decoration: none;
     transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+.sobre-card a:hover,
+.projeto-card a:hover,
+.modal-content a:hover,
+.socials li a:hover,
+.skill-card > a:hover {
+    filter: brightness(1.05);
 }
 
 .sobre-card:hover h3,
@@ -185,7 +208,7 @@ header {
 .projetos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
+    gap: 22px;
     width: 100%;
     justify-items: center;
 }
@@ -195,15 +218,34 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    min-height: 230px;
+    min-height: 255px;
     text-align: center;
 }
 
-.projeto-card .btn-mais {
+.projeto-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.projeto-tags span {
+    padding: 6px 10px;
+    border: 1px solid rgba(96,165,250,0.28);
+    border-radius: 999px;
+    background: rgba(96,165,250,0.08);
+    color: #bfdbfe;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+.btn-mais {
     display: inline-block;
     margin-top: 12px;
-    padding: 8px 14px;
-    border-radius: 8px;
+    padding: 10px 16px;
+    border-radius: 10px;
     background: #60a5fa;
     color: #fff;
     font-weight: bold;
@@ -211,9 +253,12 @@ header {
     transition: background 0.3s ease, transform 0.3s ease;
 }
 
-.projeto-card .btn-mais:hover {
+.btn-mais:hover {
     background: #8b5cf6;
     transform: scale(1.05);
+}
+
+.projeto-card .btn-mais:hover {
     text-shadow: none;
 }
 
@@ -228,8 +273,38 @@ header {
     height: 380px;
     border-radius: 16px;
     overflow: hidden;
-    background: rgba(255,255,255,0.05);
-    border: 1px solid rgba(255,255,255,0.08);
+    background: linear-gradient(180deg, rgba(19,38,63,0.92), rgba(7,18,31,0.96));
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.08), 0 20px 35px rgba(0,0,0,0.28);
+}
+
+.projeto-preview-topo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 42px;
+    padding: 0 16px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
+}
+
+.projeto-preview-topo span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.45);
+}
+
+.projeto-preview-topo span:first-child {
+    background: #f87171;
+}
+
+.projeto-preview-topo span:nth-child(2) {
+    background: #fbbf24;
+}
+
+.projeto-preview-topo span:nth-child(3) {
+    background: #34d399;
 }
 
 .projeto-preview::after {
@@ -242,6 +317,7 @@ header {
     background: rgba(4,13,24,0.82);
     color: #e5e7eb;
     font-size: 0.85rem;
+    line-height: 1.3;
     pointer-events: none;
 }
 
@@ -264,10 +340,10 @@ header {
 #modal-projeto-login .projeto-preview::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: 42px;
     right: 0;
     width: 28px;
-    height: 100%;
+    height: calc(100% - 42px);
     background: #06101e;
     z-index: 1;
     pointer-events: none;
@@ -280,6 +356,10 @@ header {
     line-height: 1.7;
 }
 
+.projeto-detalhes li + li {
+    margin-top: 6px;
+}
+
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -288,6 +368,7 @@ header {
 }
 
 .skill-card {
+    min-height: 140px;
     padding: 22px;
     border: 1px solid rgba(255,255,255,0.08);
     border-radius: 14px;
@@ -367,6 +448,8 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    min-height: 220px;
     padding: 25px;
     border-radius: 18px;
     background: rgba(255,255,255,0.08);
@@ -393,23 +476,6 @@ header {
     font-size: 1em;
     line-height: 1.6;
     color: #e0e0e0;
-}
-
-.gosto-card .btn-mais {
-    display: inline-block;
-    margin-top: 12px;
-    padding: 8px 14px;
-    border-radius: 8px;
-    background: #60a5fa;
-    color: #fff;
-    font-weight: bold;
-    text-decoration: none;
-    transition: background 0.3s ease, transform 0.3s ease;
-}
-
-.gosto-card .btn-mais:hover {
-    background: #8b5cf6;
-    transform: scale(1.05);
 }
 
 .gosto-card:hover {
@@ -481,6 +547,10 @@ header {
 .close:hover {
     color: #ff6b6b;
     transform: scale(1.1);
+}
+
+.close:focus-visible {
+    color: #ffffff;
 }
 
 footer {

@@ -18,7 +18,7 @@
 
     <header>
         <h1>dev_lumi</h1>
-        <nav>
+        <nav aria-label="Navegação principal">
             <a href="#sobre" class="nav-link">Sobre Mim</a>
             <a href="#projetos" class="nav-link">Projetos</a>
             <a href="#habilidades" class="nav-link">Habilidades</a>
@@ -33,12 +33,12 @@
         <section id="sobre">
             <h2>Sobre Mim</h2>
             <article class="sobre-card">
-                <h3>Descrição</h3>
-                <p>Me chamo Lucas Miguel, tenho 16 anos e sempre tive curiosidade em entender como a tecnologia funciona por trás. Esse interesse me levou a explorar programação, hardware e diferentes formas de construir soluções na prática.</p>
+                <h3>Quem sou eu</h3>
+                <p>Me chamo Lucas Miguel, tenho 16 anos e gosto de aprender tecnologia de forma prática, entendendo não só o visual das coisas, mas também como elas funcionam por trás.</p>
 
-                <p>Programar se tornou algo que realmente gosto. Resolver problemas, lidar com erros e ver um código funcionando no final é o que mais me motiva a continuar aprendendo e evoluindo.</p>
+                <p>Hoje estou focado em desenvolvimento web, criando projetos para evoluir em estrutura, estilo e organização de interfaces. Gosto do processo de testar ideias, corrigir erros e transformar estudo em algo funcional.</p>
 
-                <p>Atualmente, estou focado em desenvolvimento web e também explorando linguagens como C++ e PHP, buscando entender tanto o desenvolvimento quanto o funcionamento mais profundo dos sistemas. Meu objetivo é evoluir constantemente através de projetos práticos.</p>
+                <p>Além do front-end, também tenho interesse em áreas como hardware, C++ e PHP, porque quero desenvolver uma base cada vez mais completa. Meu objetivo é continuar evoluindo por meio de projetos reais, prática constante e aprendizado contínuo.</p>
                
             </article>
         </section>
@@ -48,20 +48,32 @@
             <div class="projetos-grid">
 
                 <article class="projeto-card">
+                    <div class="projeto-tags">
+                        <span>Estudo</span>
+                        <span>HTML + CSS</span>
+                    </div>
                     <h3>Projeto de Login</h3>
-                    <p>Uma tela de login estilizada com foco em estrutura visual e organização do layout.</p>
+                    <p>Interface de login feita para praticar estrutura semântica, composição visual e criação de layouts mais limpos em HTML e CSS.</p>
                     <a href="#modal-projeto-login" class="btn-mais">Ver detalhes</a>
                 </article>
 
                 <article class="projeto-card">
+                    <div class="projeto-tags">
+                        <span>Prática</span>
+                        <span>JS</span>
+                    </div>
                     <h3>Relógio</h3>
-                    <p>Projeto simples e funcional para exibir as horas em tempo real com JavaScript.</p>
+                    <p>Relógio digital com atualização em tempo real, criado para treinar lógica básica e manipulação dinâmica de conteúdo na página.</p>
                     <a href="#modal-projeto-relogio" class="btn-mais">Ver detalhes</a>
                 </article>
 
                 <article class="projeto-card">
+                    <div class="projeto-tags">
+                        <span>Funcional</span>
+                        <span>JS</span>
+                    </div>
                     <h3>Calculadora</h3>
-                    <p>Calculadora básica com operações essenciais e interação feita no navegador.</p>
+                    <p>Calculadora funcional com operações essenciais, desenvolvida para reforçar interatividade, eventos e organização da interface.</p>
                     <a href="#modal-projeto-calculadora" class="btn-mais">Ver detalhes</a>
                 </article>
 
@@ -72,13 +84,21 @@
                     <a href="#projetos" class="close">&times;</a>
                     <h2>Projeto de Login</h2>
                     <div class="projeto-preview">
+                        <div class="projeto-preview-topo">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
                         <iframe src="https://lumivivos.github.io/Projetos-Pequenos/" title="Prévia do projeto de login" sandbox="allow-scripts" scrolling="no"></iframe>
                     </div>
-                    <p>Este projeto foi feito com HTML e CSS, com foco em estrutura, composição visual e criação de uma interface limpa para autenticação.</p>
+                    <p>Esse projeto foi criado como estudo de interface, com foco em montar uma tela de autenticação visualmente organizada, agradável e coerente sem depender de JavaScript.</p>
                     <ul class="projeto-detalhes">
+                        <li>Status: concluído como projeto de prática</li>
+                        <li>Tipo: projeto de estudo voltado para interface</li>
                         <li>Stack: HTML e CSS</li>
-                        <li>Foco: layout, organização visual e estilização</li>
-                        <li>Objetivo: praticar construção de interfaces web</li>
+                        <li>Desafio principal: alinhar estrutura, espaçamento e contraste para a tela ficar limpa e legível</li>
+                        <li>O que ele demonstra: cuidado com layout, estilização e composição visual</li>
+                        <li>Aprendizado: construir interfaces simples com mais atenção aos detalhes</li>
                     </ul>
                     <a href="https://lumivivos.github.io/Projetos-Pequenos/" target="_blank" rel="noopener noreferrer" class="btn-mais">Abrir projeto</a>
                 </div>
@@ -89,13 +109,21 @@
                     <a href="#projetos" class="close">&times;</a>
                     <h2>Relógio</h2>
                     <div class="projeto-preview">
+                        <div class="projeto-preview-topo">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
                         <iframe src="https://lumivivos.github.io/Projetos-Pequenos/index/002.html" title="Prévia do projeto de relógio" sandbox="allow-scripts" scrolling="no"></iframe>
                     </div>
-                    <p>Um relógio digital que atualiza as horas em tempo real usando JavaScript, servindo como exercício de manipulação do DOM e lógica básica.</p>
+                    <p>Esse projeto foi desenvolvido para praticar atualização em tempo real com JavaScript, trabalhando lógica, tempo e alteração de conteúdo diretamente na interface.</p>
                     <ul class="projeto-detalhes">
+                        <li>Status: concluído como exercício funcional</li>
+                        <li>Tipo: exercício prático de lógica e interface</li>
                         <li>Stack: HTML, CSS e JavaScript</li>
-                        <li>Foco: atualização dinâmica de conteúdo</li>
-                        <li>Objetivo: praticar lógica e interação com a página</li>
+                        <li>Desafio principal: manter a atualização do horário de forma simples e funcional</li>
+                        <li>O que ele demonstra: manipulação de conteúdo dinâmico e integração entre estrutura, estilo e comportamento</li>
+                        <li>Aprendizado: reforço de lógica básica e uso do JavaScript para interações úteis</li>
                     </ul>
                     <a href="https://lumivivos.github.io/Projetos-Pequenos/index/002.html" target="_blank" rel="noopener noreferrer" class="btn-mais">Abrir projeto</a>
                 </div>
@@ -106,13 +134,21 @@
                     <a href="#projetos" class="close">&times;</a>
                     <h2>Calculadora</h2>
                     <div class="projeto-preview">
+                        <div class="projeto-preview-topo">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
                         <iframe src="https://lumivivos.github.io/Projetos-Pequenos/index/003.html" title="Prévia do projeto de calculadora" sandbox="allow-scripts" scrolling="no"></iframe>
                     </div>
-                    <p>Calculadora funcional com operações básicas, criada para praticar eventos, captura de valores e resposta imediata na interface.</p>
+                    <p>Esse projeto foi feito para praticar interatividade no navegador, com foco em operações básicas, captura de valores e resposta imediata ao usuário.</p>
                     <ul class="projeto-detalhes">
+                        <li>Status: concluído como projeto funcional</li>
+                        <li>Tipo: projeto funcional para treino de interatividade</li>
                         <li>Stack: HTML, CSS e JavaScript</li>
-                        <li>Foco: lógica de operações e interatividade</li>
-                        <li>Objetivo: reforçar fundamentos de JavaScript</li>
+                        <li>Desafio principal: organizar os botões e manter a lógica das operações de forma clara</li>
+                        <li>O que ela demonstra: construção de interface funcional com foco em usabilidade básica</li>
+                        <li>Aprendizado: prática de eventos, operações matemáticas e retorno visual imediato</li>
                     </ul>
                     <a href="https://lumivivos.github.io/Projetos-Pequenos/index/003.html" target="_blank" rel="noopener noreferrer" class="btn-mais">Abrir projeto</a>
                 </div>
