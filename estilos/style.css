@@ -438,8 +438,8 @@ button:focus-visible,
 
 #gostos {
     max-width: 1000px;
-    padding: 60px 65px;
-    margin-bottom: 80px;
+    padding: 40px 40px;
+    margin-bottom: 40px;
     text-align: center;
     animation: aparecer 0.7s ease forwards;
 }
