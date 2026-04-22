@@ -157,6 +157,25 @@
         font-size: 0.93rem;
     }
 
+    .projeto-preview-iframe {
+        min-height: 360px;
+    }
+
+    .projeto-preview-frame {
+        height: calc(360px - 36px);
+    }
+
+    .modal-gostos {
+        max-width: 560px;
+        padding: 24px 20px 22px;
+    }
+
+    .modal-gostos .jogos-grid,
+    .modal-gostos .musica-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
     .jogos-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 12px;

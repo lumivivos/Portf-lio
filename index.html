@@ -91,7 +91,7 @@
                         <div class="projeto-preview-conteudo">
                             <span class="projeto-preview-tag">Interface</span>
                             <h3>Sistema de Login</h3>
-                            <p>Preview estático para destacar visual, estrutura e proposta do projeto sem navegar para outras páginas dentro do modal.</p>
+                            <img src="imagens/login.png" alt="Imagem de demonstração do Login">
                         </div>
                     </div>
                     <p>Esse projeto foi criado como estudo de interface, com foco em montar uma tela de autenticação visualmente organizada, agradável e coerente sem depender de JavaScript.</p>
@@ -111,16 +111,21 @@
                 <div class="modal-content modal-projeto">
                     <a href="#projetos" class="close">&times;</a>
                     <h2>Relógio</h2>
-                    <div class="projeto-preview">
+                    <div class="projeto-preview projeto-preview-iframe">
                         <div class="projeto-preview-topo">
                             <span></span>
                             <span></span>
                             <span></span>
                         </div>
-                        <div class="projeto-preview-conteudo">
-                            <span class="projeto-preview-tag">Tempo real</span>
-                            <h3>Relógio Digital</h3>
-                            <p>Preview estático para apresentar a ideia principal do projeto com foco em atualização dinâmica e leitura clara da interface.</p>
+                        <div class="projeto-preview-frame">
+                            <iframe
+                                src="https://lumivivos.github.io/Projetos-Pequenos/index/002.html"
+                                title="Preview do projeto Relogio"
+                                loading="lazy"
+                                scrolling="no"
+                                tabindex="-1"
+                                aria-hidden="true">
+                            </iframe>
                         </div>
                     </div>
                     <p>Esse projeto foi desenvolvido para praticar atualização em tempo real com JavaScript, trabalhando lógica, tempo e alteração de conteúdo diretamente na interface.</p>
@@ -149,7 +154,7 @@
                         <div class="projeto-preview-conteudo">
                             <span class="projeto-preview-tag">Interatividade</span>
                             <h3>Calculadora</h3>
-                            <p>Preview estático para valorizar a função do projeto e o cuidado com a organização dos botões e da experiência visual.</p>
+                            <img src="imagens/calculadora.png" alt="Imagem de demonstração da Calculadora">
                         </div>
                     </div>
                     <p>Esse projeto foi feito para praticar interatividade no navegador, com foco em operações básicas, captura de valores e resposta imediata ao usuário.</p>
@@ -223,9 +228,10 @@
     </article>
 
 
-  
+  </div>
+
   <div id="modal-jogos" class="modal">
-    <div class="modal-content">
+    <div class="modal-content modal-gostos">
       <a href="#gostos" class="close">&times;</a>
       <h2>Jogos que eu gosto</h2>
       
@@ -261,7 +267,7 @@
 
 
   <div id="modal-animais" class="modal">
-    <div class="modal-content">
+    <div class="modal-content modal-gostos">
       <a href="#gostos" class="close">&times;</a>
       <h2>Branquinho</h2>
       <p>Amo o branquinho, meu coelho de estimação. Ele é simplesmente uma nuvem e adorável. Gosto de passar tempo com ele, seja dando carinho ou apenas observando suas travessuras. Ele é uma companhia incrível e sempre me faz sorrir.
@@ -271,7 +277,7 @@
 
 
   <div id="modal-musica" class="modal">
-    <div class="modal-content">
+    <div class="modal-content modal-gostos">
       <a href="#gostos" class="close">&times;</a>
       <h2>Músicas e Autores</h2>
       
